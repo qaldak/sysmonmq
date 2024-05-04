@@ -10,15 +10,15 @@ import (
 
 	"github.com/joho/godotenv"
 
-	collector "github.com/qaldak/SysMonMQ/systeminfo"
-	logger "github.com/qaldak/SysMonMQ/logging"
-	// mqtt "github.com/qaldak/SysMonMQ/mqtt"
+	logger "github.com/qaldak/sysmonmq/logging"
+	collector "github.com/qaldak/sysmonmq/systeminfo"
+	// mqtt "github.com/qaldak/sysmonmq/mqtt"
 )
 
 func main() {
 	// TODO: logger
 	logger.Info("Foo")
-	
+
 	si, err := collector.GetSystemInfo()
 	if err != nil {
 		logger.Error("Error while get systeminfo: ", err)
@@ -27,8 +27,7 @@ func main() {
 
 	/* JSON structure
 	JSON_structure='{"CPU01":'$CPU01',"CPU05":'$CPU05',"CPU15":'$CPU15',"CPU_temp":'$CPU_temp',"RAM_total":'$RAM_total',"RAM_free":'$RAM_free',"RAM_avlbl":'$RAM_avlbl',"RAM_used":'$RAM_used',"Disk_total":'$Disk_total',"Disk_free":'$Disk_free',"Disk_used":'$Disk_used',"Sys_Uptime":'$Sys_uptime',"LastLogin_date":"'$LastLogin_date'","LastLogin_user":"'$LastLogin_user'","LastLogin_from":"'$LastLogin_from'"}'
-	*/ 
-
+	*/
 
 	// TODO: generate json
 

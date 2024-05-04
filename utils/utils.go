@@ -3,7 +3,7 @@ package utils
 import (
 	"encoding/json"
 
-	logger "github.com/qaldak/SysMonMQ/logging"
+	logger "github.com/qaldak/sysmonmq/logging"
 )
 
 func GenerateJson(info interface{}) (string, error) {

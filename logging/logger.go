@@ -8,9 +8,7 @@ import (
 	"go.uber.org/zap/zapcore"
 )
 
-var (
-	Sugar  *zap.SugaredLogger
-)
+var Sugar *zap.SugaredLogger
 
 func InitLogger(debug bool) {
 	logFile, err := os.OpenFile("sysmonmq.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0o666)
@@ -19,8 +17,8 @@ func InitLogger(debug bool) {
 		os.Exit(1)
 	}
 
-    var loggerConfig zap.Config
-    
+	var loggerConfig zap.Config
+
 	if debug {
 		loggerConfig = zap.NewDevelopmentConfig()
 	} else {
@@ -30,8 +28,8 @@ func InitLogger(debug bool) {
 		loggerConfig.EncoderConfig.EncodeLevel = zapcore.CapitalLevelEncoder
 	}
 
-    loggerConfig.OutputPaths = []string{logFile.Name()}
-    loggerConfig.ErrorOutputPaths = []string{logFile.Name()}
+	loggerConfig.OutputPaths = []string{logFile.Name()}
+	loggerConfig.ErrorOutputPaths = []string{logFile.Name()}
 
 	logger, err := loggerConfig.Build()
 	if err != nil {
@@ -44,23 +42,22 @@ func InitLogger(debug bool) {
 }
 
 func Debug(args ...interface{}) {
-    Sugar.WithOptions(zap.AddCallerSkip(1)).Debug(args...)
+	Sugar.WithOptions(zap.AddCallerSkip(1)).Debug(args...)
 }
 
 func Info(args ...interface{}) {
-    Sugar.WithOptions(zap.AddCallerSkip(1)).Info(args...)
+	Sugar.WithOptions(zap.AddCallerSkip(1)).Info(args...)
 }
 
 func Warn(args ...interface{}) {
-    Sugar.WithOptions(zap.AddCallerSkip(1)).Warn(args...)
+	Sugar.WithOptions(zap.AddCallerSkip(1)).Warn(args...)
 }
 
 func Error(args ...interface{}) {
-    Sugar.WithOptions(zap.AddCallerSkip(1)).Error(args...)
+	Sugar.WithOptions(zap.AddCallerSkip(1)).Error(args...)
 }
 
 func Fatal(args ...interface{}) {
-    Sugar.WithOptions(zap.AddCallerSkip(1)).Fatal(args...)
-    os.Exit(1)
+	Sugar.WithOptions(zap.AddCallerSkip(1)).Fatal(args...)
+	os.Exit(1)
 }
-
