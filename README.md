@@ -1,4 +1,4 @@
 # sysmonmq
 
 ### Description
-Gathering system monitoring informations and send by MQTT to a definied MQTT brocker.
+Collect system monitoring informations and send them through MQTT to a definied MQTT brocker.
