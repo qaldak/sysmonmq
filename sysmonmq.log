@@ -1,0 +1,317 @@
+2024-05-01T22:12:30.527+0200	INFO	SysMonMQ/main.go:39	Yeah, logger is up an running
+2024-05-01T22:13:40.936+0200	INFO	SysMonMQ/main.go:39	Yeah, logger is up an running
+2024-05-01T22:14:44.107+0200	INFO	SysMonMQ/main.go:39	Yeah, logger is up an running
+2024-05-01T22:14:44.108+0200	ERROR	SysMonMQ/main.go:44	Error initializing environment variables from '.env'. [open .env: no such file or directory]
+main.init.0
+	/home/roger/Coding/SysMonMQ/main.go:44
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6507
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+2024-05-01T22:17:38.648+0200	INFO	SysMonMQ/main.go:39	Yeah, logger is up an running%!(EXTRA string=Foo)
+2024-05-01T22:17:38.649+0200	ERROR	SysMonMQ/main.go:44	Error initializing environment variables from '.env'. %vopen .env: no such file or directory
+main.init.0
+	/home/roger/Coding/SysMonMQ/main.go:44
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6507
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+2024-05-03T11:43:17.250+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T11:43:17.250+0200	ERROR	SysMonMQ/main.go:59	Error initializing environment variables from '.env': open .env: no such file or directory
+main.init.0
+	/home/roger/Coding/SysMonMQ/main.go:59
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6507
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+2024-05-03T11:43:51.740+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T11:45:37.464+0200	INFO	SysMonMQ/main.go:55	Yeah, logger is up an runningFoo
+2024-05-03T11:45:37.464+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T11:45:54.939+0200	INFO	SysMonMQ/main.go:55	Yeah, logger is up an runningFoo
+2024-05-03T11:45:54.939+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T11:45:54.940+0200	INFO	SysMonMQ/main.go:27	&{1.55517578125 1.1748046875 0.76904296875}
+2024-05-03T11:46:37.858+0200	INFO	SysMonMQ/main.go:55	Yeah, logger is up an runningFoo
+2024-05-03T11:46:37.858+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T11:46:37.858+0200	INFO	SysMonMQ/main.go:27	&{0.79638671875 1.02587890625 0.73388671875}
+2024-05-03T11:48:09.025+0200	INFO	SysMonMQ/main.go:56	Yeah, logger is up an runningFoo
+2024-05-03T11:48:09.025+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T11:48:09.025+0200	INFO	SysMonMQ/main.go:27	&{0.37890625 0.80419921875 0.67919921875}
+2024-05-03T11:48:33.952+0200	INFO	SysMonMQ/main.go:56	Yeah, logger is up an runningFoo
+2024-05-03T11:48:33.952+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T11:48:33.952+0200	INFO	SysMonMQ/main.go:27	&{0.39599609375 0.77197265625 0.6708984375}
+2024-05-03T11:52:21.392+0200	INFO	SysMonMQ/main.go:56	Yeah, logger is up an runningFoo
+2024-05-03T11:52:21.392+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T11:52:21.392+0200	INFO	SysMonMQ/main.go:27	&{1.32861328125 0.884765625 0.734375}
+2024-05-03T11:53:58.872+0200	INFO	SysMonMQ/main.go:56	Yeah, logger is up an runningFoo
+2024-05-03T11:53:58.872+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T11:53:58.872+0200	INFO	SysMonMQ/main.go:27	&{1.0693359375 0.91845703125 0.759765625}
+2024-05-03T11:54:18.399+0200	INFO	SysMonMQ/main.go:56	Yeah, logger is up an runningFoo
+2024-05-03T11:54:18.400+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T11:54:18.400+0200	INFO	SysMonMQ/main.go:27	&{1.6787109375 1.08203125 0.8193359375}
+2024-05-03T11:54:23.360+0200	INFO	SysMonMQ/main.go:56	Yeah, logger is up an runningFoo
+2024-05-03T11:54:23.360+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T11:54:23.360+0200	INFO	SysMonMQ/main.go:27	&{1.5439453125 1.06396484375 0.814453125}
+2024-05-03T11:54:23.360+0200	DEBUG	SysMonMQ/main.go:28	&{1.5439453125 1.06396484375 0.814453125}
+2024-05-03T12:05:16.394+0200	INFO	SysMonMQ/main.go:50	Yeah, logger is up an runningFoo
+2024-05-03T12:05:16.394+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T12:05:16.394+0200	INFO	collector/collector.go:14	&{1.5087890625 0.75 0.65380859375}
+2024-05-03T12:05:16.394+0200	DEBUG	collector/collector.go:15	&{1.5087890625 0.75 0.65380859375}
+2024-05-03T12:06:26.077+0200	INFO	SysMonMQ/main.go:50	Yeah, logger is up an running
+2024-05-03T12:06:26.078+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T12:06:26.078+0200	INFO	collector/collector.go:14	&{1.28369140625 0.822265625 0.68408203125}
+2024-05-03T12:06:26.078+0200	DEBUG	collector/collector.go:15	&{1.28369140625 0.822265625 0.68408203125}
+2024-05-03T12:09:49.034+0200	INFO	SysMonMQ/main.go:50	[Yeah, logger is up an running]
+2024-05-03T12:09:49.034+0200	INFO	SysMonMQ/main.go:20	[Foo]
+2024-05-03T12:09:49.034+0200	INFO	collector/collector.go:14	[0x400001a390]
+2024-05-03T12:09:49.034+0200	DEBUG	collector/collector.go:15	&{1.486328125 1.00146484375 0.775390625}
+2024-05-03T12:10:08.280+0200	INFO	SysMonMQ/main.go:50	Yeah, logger is up an running
+2024-05-03T12:10:08.281+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T12:10:08.281+0200	INFO	collector/collector.go:14	&{1.97119140625 1.13330078125 0.82421875}
+2024-05-03T12:10:08.281+0200	DEBUG	collector/collector.go:15	&{1.97119140625 1.13330078125 0.82421875}
+2024-05-03T12:10:36.045+0200	INFO	SysMonMQ/main.go:50	Yeah, logger is up an running%!(EXTRA string=Foo)
+2024-05-03T12:10:36.045+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T12:10:36.045+0200	INFO	collector/collector.go:14	&{1.630859375 1.13525390625 0.83447265625}
+2024-05-03T12:10:36.045+0200	DEBUG	collector/collector.go:15	&{1.630859375 1.13525390625 0.83447265625}
+2024-05-03T12:11:31.922+0200	INFO	SysMonMQ/main.go:50	Yeah, logger is up an running%!(EXTRA string=Foo)
+2024-05-03T12:11:31.922+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T12:11:31.922+0200	INFO	collector/collector.go:14	&{1.0205078125 1.04833984375 0.8212890625}
+2024-05-03T12:11:31.922+0200	DEBUG	collector/collector.go:15	&{1.0205078125 1.04833984375 0.8212890625}
+2024-05-03T12:12:29.447+0200	INFO	SysMonMQ/main.go:50	Yeah, logger is up an runningFoo
+2024-05-03T12:12:29.448+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T12:12:29.448+0200	INFO	collector/collector.go:14	&{2.19921875 1.3759765625 0.94775390625}
+2024-05-03T12:12:29.448+0200	DEBUG	collector/collector.go:15	&{2.19921875 1.3759765625 0.94775390625}
+2024-05-03T16:07:23.971+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T16:07:23.973+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T16:07:23.973+0200	INFO	systeminfo/collector.go:14	&{0.279296875 0.1689453125 0.14990234375}
+2024-05-03T16:07:23.973+0200	DEBUG	systeminfo/collector.go:15	&{0.279296875 0.1689453125 0.14990234375}
+2024-05-03T16:07:23.973+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T17:21:34.665+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T17:21:34.669+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T17:21:34.669+0200	INFO	systeminfo/collector.go:21	&{0.59814453125 0.572265625 0.55322265625}
+2024-05-03T17:21:34.669+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T17:22:09.171+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T17:22:09.172+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T17:22:09.172+0200	DEBUG	systeminfo/collector.go:21	Bar
+2024-05-03T17:22:09.172+0200	INFO	systeminfo/collector.go:22	&{0.54931640625 0.5703125 0.55224609375}
+2024-05-03T17:22:09.172+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T17:29:24.185+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T17:29:24.185+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T17:29:24.185+0200	INFO	systeminfo/collector.go:13	&{0.71142578125 0.9384765625 0.775390625}
+2024-05-03T17:29:24.185+0200	INFO	systeminfo/collector.go:16	&{6183108608 5172305920 57344 1255936000 147619840 1010802688 1754992640 2527506432 6182400000 3452174336 4087808 2730225664 519340032 322764800 346677248 94195712 20172308480 86900736 true}
+2024-05-03T17:29:24.185+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T17:39:51.500+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T17:39:51.502+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T17:39:51.502+0200	INFO	systeminfo/collector.go:15	&{2.001953125 1.42919921875 1.078125}
+2024-05-03T17:39:51.502+0200	INFO	systeminfo/collector.go:18	&{6183108608 5372084224 137277440 811024384}
+2024-05-03T17:39:51.502+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T20:41:45.366+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T20:41:45.371+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T20:41:45.371+0200	INFO	systeminfo/collector.go:15	&{0.51171875 0.267578125 0.1962890625}
+2024-05-03T20:41:45.371+0200	INFO	systeminfo/collector.go:18	&{6183108608 5612998656 136396800 570109952}
+2024-05-03T20:41:45.371+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:05:02.048+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:05:02.048+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:05:02.048+0200	INFO	systeminfo/collector.go:15	&{2.009765625 0.63818359375 0.22265625}
+2024-05-03T22:05:02.048+0200	INFO	systeminfo/collector.go:18	&{6181072896 3442524160 203493376 2738548736}
+2024-05-03T22:05:02.048+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:07:22.083+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:07:22.083+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:07:22.083+0200	INFO	systeminfo/collector.go:15	&{0.95849609375 0.62939453125 0.271484375}
+2024-05-03T22:07:22.083+0200	INFO	systeminfo/collector.go:18	&{6036204 3018448 407584768 3090182144}
+2024-05-03T22:07:22.083+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:14:08.506+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:14:08.506+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:14:08.506+0200	INFO	systeminfo/collector.go:15	&{0.39208984375 0.404296875 0.2783203125}
+2024-05-03T22:14:08.506+0200	INFO	systeminfo/collector.go:18	&{6181072896 3566645248 145707008 2614427648}
+2024-05-03T22:14:08.506+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:15:45.912+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:15:45.912+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:15:45.912+0200	INFO	systeminfo/collector.go:15	&{0.3310546875 0.37890625 0.2783203125}
+2024-05-03T22:15:45.912+0200	INFO	systeminfo/collector.go:18	&{5894 3601227776 134844416 2579845120}
+2024-05-03T22:15:45.912+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:16:47.296+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:16:47.296+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:16:47.296+0200	INFO	systeminfo/collector.go:15	&{0.208984375 0.3330078125 0.26806640625}
+2024-05-03T22:16:47.297+0200	INFO	systeminfo/collector.go:18	&{5894 3445 124 2449}
+2024-05-03T22:16:47.297+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:17:42.300+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:17:42.300+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:17:42.300+0200	INFO	systeminfo/collector.go:15	&{0.4970703125 0.38623046875 0.28857421875}
+2024-05-03T22:17:42.300+0200	INFO	systeminfo/collector.go:18	&{5894 3512 113 2382}
+2024-05-03T22:17:42.300+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:19:41.677+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:19:41.678+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:19:41.678+0200	INFO	systeminfo/collector.go:15	&{0.623046875 0.43408203125 0.310546875}
+2024-05-03T22:19:41.678+0200	INFO	systeminfo/collector.go:37	true
+2024-05-03T22:19:41.678+0200	INFO	systeminfo/collector.go:18	&{5894 3516 149 2378}
+2024-05-03T22:19:41.678+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:26:11.210+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:26:11.211+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:26:11.211+0200	INFO	systeminfo/collector.go:16	&{0.42041015625 0.61083984375 0.4453125}
+2024-05-03T22:26:11.211+0200	INFO	systeminfo/collector.go:19	&{5894 3906 120 1988}
+2024-05-03T22:26:11.211+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:27:12.248+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:27:12.248+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:27:12.248+0200	INFO	systeminfo/collector.go:16	&{0.67578125 0.6552734375 0.47021484375}
+2024-05-03T22:27:12.248+0200	INFO	systeminfo/collector.go:19	&{5894 3877 137 2016}
+2024-05-03T22:27:12.248+0200	INFO	systeminfo/collector.go:41	[{vda 116945 48440} {vda1 217 2} {vda2 168 20} {vda3 116445 48417} {zram0 123 2904} {loop0 9 0} {loop1 17 0} {sr0 0 0}]
+2024-05-03T22:27:12.248+0200	INFO	systeminfo/collector.go:22	12
+2024-05-03T22:27:12.248+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:27:36.394+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:27:36.394+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:27:36.394+0200	INFO	systeminfo/collector.go:16	&{0.5517578125 0.62841796875 0.46435546875}
+2024-05-03T22:27:36.394+0200	INFO	systeminfo/collector.go:19	&{5894 3827 188 2067}
+2024-05-03T22:27:36.394+0200	INFO	systeminfo/collector.go:41	[{vda 116947 48564} {vda1 217 2} {vda2 168 20} {vda3 116447 48541} {zram0 131 2904} {loop0 9 0} {loop1 17 0} {sr0 0 0}]
+2024-05-03T22:27:36.394+0200	INFO	systeminfo/collector.go:22	12
+2024-05-03T22:27:36.394+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:32:26.670+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:32:26.671+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:32:26.671+0200	INFO	systeminfo/collector.go:16	&{0.74755859375 0.7060546875 0.5458984375}
+2024-05-03T22:32:26.671+0200	INFO	systeminfo/collector.go:19	49.2
+2024-05-03T22:32:26.671+0200	INFO	systeminfo/collector.go:22	&{5894 4017 125 1876}
+2024-05-03T22:32:26.671+0200	INFO	systeminfo/collector.go:51	[{vda 117857 57489} {vda1 217 2} {vda2 168 20} {vda3 117357 57466} {zram0 131 2904} {loop0 9 0} {loop1 17 0} {sr0 0 0}]
+2024-05-03T22:32:26.671+0200	INFO	systeminfo/collector.go:25	12
+2024-05-03T22:32:26.671+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:35:08.354+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:35:08.354+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:35:08.354+0200	INFO	systeminfo/collector.go:17	&{1.37158203125 0.9580078125 0.662109375}
+2024-05-03T22:35:08.354+0200	INFO	systeminfo/collector.go:20	49.2
+2024-05-03T22:35:08.354+0200	INFO	systeminfo/collector.go:23	&{5894 4045 177 1849}
+2024-05-03T22:35:08.355+0200	INFO	systeminfo/collector.go:55	[{vda 118670 64332} {vda1 217 2} {vda2 168 20} {vda3 118170 64309} {zram0 139 3037} {loop0 9 0} {loop1 17 0} {sr0 0 0}]
+2024-05-03T22:35:08.355+0200	INFO	systeminfo/collector.go:26	12
+2024-05-03T22:35:08.355+0200	INFO	systeminfo/collector.go:81	
+2024-05-03T22:35:08.355+0200	INFO	systeminfo/collector.go:29	Foo
+2024-05-03T22:35:08.355+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:39:11.029+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:39:11.029+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:39:11.029+0200	INFO	systeminfo/collector.go:17	&{0.431640625 0.58837890625 0.568359375}
+2024-05-03T22:39:11.029+0200	INFO	systeminfo/collector.go:20	49.2
+2024-05-03T22:39:11.029+0200	INFO	systeminfo/collector.go:23	&{5894 4057 148 1837}
+2024-05-03T22:39:11.029+0200	INFO	systeminfo/collector.go:55	[{vda 118878 68273} {vda1 217 2} {vda2 168 20} {vda3 118378 68250} {zram0 155 3037} {loop0 9 0} {loop1 17 0} {sr0 0 0}]
+2024-05-03T22:39:11.029+0200	INFO	systeminfo/collector.go:26	12
+2024-05-03T22:39:11.029+0200	INFO	systeminfo/collector.go:81	35m10s
+2024-05-03T22:39:11.029+0200	INFO	systeminfo/collector.go:29	Foo
+2024-05-03T22:39:11.029+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:44:18.245+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:44:18.246+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:44:18.246+0200	INFO	systeminfo/collector.go:18	&{0.97119140625 0.7138671875 0.60888671875}
+2024-05-03T22:44:18.246+0200	INFO	systeminfo/collector.go:21	49.2
+2024-05-03T22:44:18.246+0200	INFO	systeminfo/collector.go:24	&{5894 4373 130 1520}
+2024-05-03T22:44:18.246+0200	INFO	systeminfo/collector.go:56	[{vda 169323 73614} {vda1 253 2} {vda2 196 20} {vda3 168758 73591} {zram0 1129 63410} {loop0 9 0} {loop1 17 0} {sr0 0 0}]
+2024-05-03T22:44:18.246+0200	INFO	systeminfo/collector.go:27	12
+2024-05-03T22:44:18.246+0200	INFO	systeminfo/collector.go:79	0
+2024-05-03T22:44:18.246+0200	INFO	systeminfo/collector.go:86	40m17s
+2024-05-03T22:44:18.246+0200	INFO	systeminfo/collector.go:30	Foo
+2024-05-03T22:44:18.246+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:44:45.862+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:44:45.862+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:44:45.863+0200	INFO	systeminfo/collector.go:18	&{0.79345703125 0.68896484375 0.603515625}
+2024-05-03T22:44:45.863+0200	INFO	systeminfo/collector.go:21	49.2
+2024-05-03T22:44:45.863+0200	INFO	systeminfo/collector.go:24	&{5894 4360 123 1534}
+2024-05-03T22:44:45.863+0200	INFO	systeminfo/collector.go:56	[{vda 169632 74966} {vda1 253 2} {vda2 196 20} {vda3 169067 74943} {zram0 1143 64717} {loop0 9 0} {loop1 17 0} {sr0 0 0}]
+2024-05-03T22:44:45.863+0200	INFO	systeminfo/collector.go:27	12
+2024-05-03T22:44:45.863+0200	ERROR	systeminfo/collector.go:79	0
+github.com/qaldak/SysMonMQ/systeminfo.getUptimeStats
+	/home/roger/Coding/SysMonMQ/systeminfo/collector.go:79
+github.com/qaldak/SysMonMQ/systeminfo.GetSystemInfo
+	/home/roger/Coding/SysMonMQ/systeminfo/collector.go:29
+main.main
+	/home/roger/Coding/SysMonMQ/main.go:22
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+2024-05-03T22:44:45.863+0200	INFO	systeminfo/collector.go:86	40m45s
+2024-05-03T22:44:45.863+0200	INFO	systeminfo/collector.go:30	Foo
+2024-05-03T22:44:45.863+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:46:28.525+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:46:28.525+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:46:28.525+0200	INFO	systeminfo/collector.go:18	&{1.6201171875 0.998046875 0.72509765625}
+2024-05-03T22:46:28.525+0200	INFO	systeminfo/collector.go:21	49.2
+2024-05-03T22:46:28.525+0200	INFO	systeminfo/collector.go:24	&{5894 4375 126 1519}
+2024-05-03T22:46:28.525+0200	INFO	systeminfo/collector.go:56	[{vda 170102 76235} {vda1 253 2} {vda2 196 20} {vda3 169537 76212} {zram0 1151 85567} {loop0 9 0} {loop1 17 0} {sr0 0 0}]
+2024-05-03T22:46:28.525+0200	INFO	systeminfo/collector.go:27	12
+2024-05-03T22:46:28.525+0200	ERROR	systeminfo/collector.go:83	2547
+github.com/qaldak/SysMonMQ/systeminfo.getUptimeStats
+	/home/roger/Coding/SysMonMQ/systeminfo/collector.go:83
+github.com/qaldak/SysMonMQ/systeminfo.GetSystemInfo
+	/home/roger/Coding/SysMonMQ/systeminfo/collector.go:29
+main.main
+	/home/roger/Coding/SysMonMQ/main.go:22
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+2024-05-03T22:46:28.525+0200	INFO	systeminfo/collector.go:90	42m27s
+2024-05-03T22:46:28.525+0200	INFO	systeminfo/collector.go:30	Foo
+2024-05-03T22:46:28.525+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T22:47:08.448+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T22:47:08.448+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T22:47:08.448+0200	INFO	systeminfo/collector.go:18	&{0.87451171875 0.88671875 0.69970703125}
+2024-05-03T22:47:08.448+0200	INFO	systeminfo/collector.go:21	49.2
+2024-05-03T22:47:08.449+0200	INFO	systeminfo/collector.go:24	&{5894 4296 185 1598}
+2024-05-03T22:47:08.449+0200	INFO	systeminfo/collector.go:56	[{vda 170309 78212} {vda1 253 2} {vda2 196 20} {vda3 169744 78189} {zram0 1161 85567} {loop0 9 0} {loop1 17 0} {sr0 0 0}]
+2024-05-03T22:47:08.449+0200	INFO	systeminfo/collector.go:27	12
+2024-05-03T22:47:08.449+0200	INFO	systeminfo/collector.go:83	Uptime 2587
+2024-05-03T22:47:08.449+0200	INFO	systeminfo/collector.go:90	43m7s
+2024-05-03T22:47:08.449+0200	INFO	systeminfo/collector.go:30	Foo
+2024-05-03T22:47:08.449+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T23:05:21.577+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T23:05:21.577+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T23:05:21.577+0200	INFO	systeminfo/collector.go:19	&{0.82275390625 0.72900390625 0.72509765625}
+2024-05-03T23:05:21.577+0200	INFO	systeminfo/collector.go:22	49.2
+2024-05-03T23:05:21.578+0200	INFO	systeminfo/collector.go:25	&{5894 4255 133 1638}
+2024-05-03T23:05:21.578+0200	INFO	systeminfo/collector.go:60	[{vda 172853 94082} {vda1 253 2} {vda2 196 20} {vda3 172288 94059} {zram0 2476 111259} {loop0 9 0} {loop1 17 0} {sr0 0 0}]
+2024-05-03T23:05:21.578+0200	INFO	systeminfo/collector.go:28	12
+2024-05-03T23:05:21.578+0200	INFO	systeminfo/collector.go:93	Uptime 3680
+2024-05-03T23:05:21.578+0200	INFO	systeminfo/collector.go:31	3680
+2024-05-03T23:05:21.578+0200	INFO	systeminfo/collector.go:67	/usr/bin/w -h
+2024-05-03T23:05:21.578+0200	INFO	systeminfo/collector.go:34	Bar
+2024-05-03T23:05:21.578+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T23:07:08.858+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T23:07:08.858+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T23:07:08.858+0200	INFO	systeminfo/collector.go:19	&{0.62060546875 0.716796875 0.72119140625}
+2024-05-03T23:07:08.858+0200	INFO	systeminfo/collector.go:22	49.2
+2024-05-03T23:07:08.858+0200	INFO	systeminfo/collector.go:25	&{5894 4211 148 1683}
+2024-05-03T23:07:08.858+0200	INFO	systeminfo/collector.go:60	[{vda 173065 97796} {vda1 253 2} {vda2 196 20} {vda3 172500 97773} {zram0 2765 112909} {loop0 9 0} {loop1 17 0} {sr0 0 0}]
+2024-05-03T23:07:08.858+0200	INFO	systeminfo/collector.go:28	12
+2024-05-03T23:07:08.858+0200	INFO	systeminfo/collector.go:97	Uptime 3788
+2024-05-03T23:07:08.858+0200	INFO	systeminfo/collector.go:31	3788
+2024-05-03T23:07:08.873+0200	INFO	systeminfo/collector.go:71	[114 111 103 101 114 32 32 32 32 116 116 121 50 32 32 32 32 32 32 50 50 58 48 52 32 32 32 32 49 58 48 51 109 32 32 48 46 48 49 115 32 32 48 46 48 49 115 32 47 117 115 114 47 108 105 98 101 120 101 99 47 103 110 111 109 101 45 115 101 115 115 105 111 110 45 98 105 110 97 114 121 10]
+2024-05-03T23:07:08.873+0200	INFO	systeminfo/collector.go:34	Bar
+2024-05-03T23:07:08.873+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T23:13:07.755+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T23:13:07.755+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T23:13:07.755+0200	INFO	systeminfo/collector.go:19	&{0.23095703125 0.37744140625 0.560546875}
+2024-05-03T23:13:07.755+0200	INFO	systeminfo/collector.go:22	49.2
+2024-05-03T23:13:07.755+0200	INFO	systeminfo/collector.go:25	&{5894 4206 117 1688}
+2024-05-03T23:13:07.755+0200	INFO	systeminfo/collector.go:60	[{vda 174801 101861} {vda1 253 2} {vda2 196 20} {vda3 174236 101838} {zram0 5159 112909} {loop0 9 0} {loop1 17 0} {sr0 0 0}]
+2024-05-03T23:13:07.755+0200	INFO	systeminfo/collector.go:28	12
+2024-05-03T23:13:07.755+0200	INFO	systeminfo/collector.go:97	Uptime 4146
+2024-05-03T23:13:07.755+0200	INFO	systeminfo/collector.go:31	4146
+2024-05-03T23:13:07.764+0200	INFO	systeminfo/collector.go:71	roger    tty2      22:04    1:09m  0.01s  0.01s /usr/libexec/gnome-session-binary
+
+2024-05-03T23:13:07.764+0200	INFO	systeminfo/collector.go:34	Bar
+2024-05-03T23:13:07.764+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-03T23:14:48.554+0200	INFO	SysMonMQ/main.go:54	Yeah, logger is up an runningFoo
+2024-05-03T23:14:48.554+0200	INFO	SysMonMQ/main.go:20	Foo
+2024-05-03T23:14:48.554+0200	INFO	systeminfo/collector.go:19	&{0.98193359375 0.52783203125 0.5888671875}
+2024-05-03T23:14:48.554+0200	INFO	systeminfo/collector.go:22	49.2
+2024-05-03T23:14:48.554+0200	INFO	systeminfo/collector.go:25	&{5894 4177 131 1717}
+2024-05-03T23:14:48.554+0200	INFO	systeminfo/collector.go:60	[{vda 174844 104232} {vda1 253 2} {vda2 196 20} {vda3 174279 104209} {zram0 5188 112909} {loop0 9 0} {loop1 17 0} {sr0 0 0}]
+2024-05-03T23:14:48.554+0200	INFO	systeminfo/collector.go:28	12
+2024-05-03T23:14:48.554+0200	INFO	systeminfo/collector.go:97	Uptime 4247
+2024-05-03T23:14:48.554+0200	INFO	systeminfo/collector.go:31	4247
+2024-05-03T23:14:48.563+0200	INFO	systeminfo/collector.go:71	roger    tty2     -                22:04    1:10m  0.01s  0.01s /usr/libexec/gnome-session-binary
+
+2024-05-03T23:14:48.563+0200	INFO	systeminfo/collector.go:34	Bar
+2024-05-03T23:14:48.563+0200	DEBUG	SysMonMQ/main.go:26	Foo
+2024-05-04T09:01:59.996+0200	INFO	sysmonmq/main.go:54	Yeah, logger is up an runningFoo
+2024-05-04T09:01:59.998+0200	INFO	sysmonmq/main.go:20	Foo
+2024-05-04T09:01:59.998+0200	INFO	systeminfo/collector.go:19	&{0.828125 1.1025390625 0.6357421875}
+2024-05-04T09:01:59.998+0200	INFO	systeminfo/collector.go:22	49.2
+2024-05-04T09:01:59.998+0200	INFO	systeminfo/collector.go:25	&{5894 4141 147 1753}
+2024-05-04T09:01:59.998+0200	INFO	systeminfo/collector.go:60	[{vda 87283 24505} {vda1 181 2} {vda2 174 20} {vda3 86813 24482} {zram0 560 18161} {loop0 9 0} {loop1 17 0} {sr0 0 0}]
+2024-05-04T09:01:59.998+0200	INFO	systeminfo/collector.go:28	12
+2024-05-04T09:01:59.998+0200	INFO	systeminfo/collector.go:97	Uptime 382
+2024-05-04T09:01:59.998+0200	INFO	systeminfo/collector.go:31	382
+2024-05-04T09:02:00.008+0200	INFO	systeminfo/collector.go:71	roger    tty2     -                08:55     ?     0.03s  0.03s /usr/libexec/gnome-session-binary
+
+2024-05-04T09:02:00.008+0200	INFO	systeminfo/collector.go:34	Bar
+2024-05-04T09:02:00.008+0200	DEBUG	sysmonmq/main.go:26	Foo
