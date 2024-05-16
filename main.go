@@ -2,36 +2,43 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"log"
-
-	//"os"
-	//"os/signal"
-	//"syscall"
 
 	"github.com/joho/godotenv"
 
-	logger "github.com/qaldak/sysmonmq/logging"
+	logger "github.com/qaldak/sysmonmq/internal/logging"
+	"github.com/qaldak/sysmonmq/internal/utils"
+	"github.com/qaldak/sysmonmq/mqtt"
+	"github.com/qaldak/sysmonmq/slack"
 	collector "github.com/qaldak/sysmonmq/systeminfo"
-	// mqtt "github.com/qaldak/sysmonmq/mqtt"
 )
 
 func main() {
 	// TODO: logger
 	logger.Info("Foo")
 
-	si, err := collector.GetSystemInfo()
+	// collect system information
+	data, err := collector.GetSystemInfo()
 	if err != nil {
 		logger.Error("Error while get systeminfo: ", err)
+		
 	}
-	logger.Debug(si)
+	logger.Info("Collected system infos: ", data)
 
-	/* JSON structure
-	JSON_structure='{"CPU01":'$CPU01',"CPU05":'$CPU05',"CPU15":'$CPU15',"CPU_temp":'$CPU_temp',"RAM_total":'$RAM_total',"RAM_free":'$RAM_free',"RAM_avlbl":'$RAM_avlbl',"RAM_used":'$RAM_used',"Disk_total":'$Disk_total',"Disk_free":'$Disk_free',"Disk_used":'$Disk_used',"Sys_Uptime":'$Sys_uptime',"LastLogin_date":"'$LastLogin_date'","LastLogin_user":"'$LastLogin_user'","LastLogin_from":"'$LastLogin_from'"}'
-	*/
+	// generate json
+	json, err := utils.GenerateJson(data)
+	if err != nil {
+		logger.Error("Failed to generate JSON")
+	}
+	logger.Info("JSON: ", json)
 
-	// TODO: generate json
-
-	// TODO: mqtt message to broker
+	// pubslish mqtt message to broker
+	err = mqtt.PublishMessage(json)
+	if err != nil {
+		logger.Error("Failed to publish MQTT message")
+		slack.PostSlackMsg(fmt.Sprint(err))
+	}
 
 	log.Print("Foo")
 }
@@ -57,8 +64,6 @@ func init() {
 	if err != nil {
 		logger.Error("Error initializing environment variables from '.env': ", err)
 	}
-
-	// TODO: mqtt.InitMQTT()
 }
 
 func isFlagPassed(name string) bool {

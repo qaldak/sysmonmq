@@ -3,7 +3,7 @@ package systeminfo
 import (
 	"math"
 
-	logger "github.com/qaldak/sysmonmq/logging"
+	logger "github.com/qaldak/sysmonmq/internal/logging"
 	"github.com/shirou/gopsutil/v3/disk"
 	"github.com/shirou/gopsutil/v3/host"
 	"github.com/shirou/gopsutil/v3/load"
@@ -22,23 +22,36 @@ type diskStats struct {
 }
 
 // Get system informations from host
-func GetSystemInfo() (string, error) {
-	cpuvags := getCPULoadStats()
-	logger.Info(cpuvags)
+func GetSystemInfo() (*SystemInfo, error) {
+	cpuavgs := getCPULoadStats()
 
 	cpuTemp := getCPUTemp()
-	logger.Info(cpuTemp)
 
 	memoryStats := getMemoryStats()
-	logger.Info(memoryStats)
 
 	diskStats := getDiskStats()
-	logger.Info(diskStats)
 
 	uptimeStats := getUptimeStats()
-	logger.Info(uptimeStats)
 
-	return "Foo", nil
+	systemInfo := &SystemInfo{
+		CPU01:          cpuavgs.Load1,
+		CPU05:          cpuavgs.Load5,
+		CPU15:          cpuavgs.Load15,
+		CPU_temp:       cpuTemp,
+		RAM_total:      memoryStats.Total,
+		RAM_free:       memoryStats.Free,
+		RAM_avlbl:      memoryStats.Available,
+		RAM_used:       memoryStats.Used,
+		Disk_total:     diskStats.Total,
+		Disk_free:      diskStats.Free,
+		Disk_used:      diskStats.Used,
+		Sys_Uptime:     uptimeStats,
+		LastLogin_date: "",
+		LastLogin_user: "",
+		LastLogin_from: "",
+	}
+
+	return systemInfo, nil
 }
 
 // Determine CPU load average (1 min, 5 min, 15 min)
@@ -48,22 +61,28 @@ func getCPULoadStats() *load.AvgStat {
 		logger.Error("Failed to get cpu load avarage")
 	}
 
+	logger.Info("CPU load avg: ", cpuavgs)
+
 	return cpuavgs
 }
 
 // Determine CPU temperature informations
 func getCPUTemp() float64 {
-	// Todo: implement
-	// head -n 1 /sys/class/thermal/thermal_zone0/temps | xargs -I{} awk "BEGIN {printf \"%.2f\n\", {}/1000}")
+	t := 0.00
 
-	cpu, err := host.Info()
-	if err != nil {
+	tempStat, err := host.SensorsTemperatures()
+	if err != nil || tempStat == nil {
 		logger.Error("Failed to get cpu informations")
 	}
 
-	logger.Info("cpu:", cpu)
+	if len(tempStat) > 0 {
+		logger.Info("Foo ", tempStat)
+		t = tempStat[0].Temperature
+	}
 
-	return 0.00
+	logger.Info("Temp", t)
+
+	return t
 }
 
 // Determine disk usage for root directory ("/")
@@ -79,6 +98,8 @@ func getDiskStats() *diskStats {
 		Used:        usageStats.Used / (1 << 30),                  // convert to Gb
 		UsedPercent: math.Round(usageStats.UsedPercent*100) / 100, // convert to 2 decimal
 	}
+
+	logger.Info("Disk usage: ", diskUsage)
 
 	return diskUsage
 }
@@ -96,10 +117,10 @@ func getMemoryStats() *memStats {
 		Used:        mem.Used / (1 << 20),
 		Free:        mem.Free / (1 << 20),
 		Available:   mem.Available / (1 << 20),
-		UsedPercent: math.Round(mem.UsedPercent*100) / 100,
+		UsedPercent: math.Round(mem.UsedPercent*100) / 100, // convert to 2 decimal
 	}
 
-	logger.Info("memory: ", memUsage)
+	logger.Info("Memory usage: ", memUsage)
 
 	return memUsage
 }
@@ -110,7 +131,8 @@ func getUptimeStats() uint64 {
 	if err != nil {
 		logger.Error("Failed to get uptime info")
 	}
-	logger.Info(uptime)
+
+	logger.Info("System uptime: ", uptime)
 
 	return uptime
 }

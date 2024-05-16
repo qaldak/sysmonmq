@@ -6,7 +6,7 @@ import (
 
 func TestInitMQTT(t *testing.T) {
 	// Call the InitLogger function
-	InitMQTT()
+	PublishMessage("Foo")
 
 	// Add your assertions here to verify that the logger was initialized correctly
 	// For example, you can check if the logger variable is not nil

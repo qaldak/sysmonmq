@@ -42,22 +42,23 @@ func InitLogger(debug bool) {
 }
 
 func Debug(args ...interface{}) {
-	Sugar.WithOptions(zap.AddCallerSkip(1)).Debug(args...)
+	Sugar.WithOptions(zap.AddCallerSkip(1)).Debugln(args...)
 }
 
 func Info(args ...interface{}) {
-	Sugar.WithOptions(zap.AddCallerSkip(1)).Info(args...)
+	Sugar.WithOptions(zap.AddCallerSkip(1)).Infoln(args...)
 }
 
 func Warn(args ...interface{}) {
-	Sugar.WithOptions(zap.AddCallerSkip(1)).Warn(args...)
+	Sugar.WithOptions(zap.AddCallerSkip(1)).Warnln(args...)
 }
 
 func Error(args ...interface{}) {
-	Sugar.WithOptions(zap.AddCallerSkip(1)).Error(args...)
+	Sugar.WithOptions(zap.AddCallerSkip(1)).Errorln(args...)
 }
 
 func Fatal(args ...interface{}) {
-	Sugar.WithOptions(zap.AddCallerSkip(1)).Fatal(args...)
+	Sugar.WithOptions(zap.AddCallerSkip(1)).Fatalln(args...)
+	// Todo: add more informations about exit
 	os.Exit(1)
 }

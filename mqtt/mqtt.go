@@ -1,42 +1,57 @@
 package mqtt
 
 import (
-	"fmt"
-	"log"
 	"os"
+	"strings"
 
-	logger "github.com/qaldak/sysmonmq/logging"
+	logger "github.com/qaldak/sysmonmq/internal/logging"
+	"github.com/qaldak/sysmonmq/internal/utils"
 
 	MQTT "github.com/eclipse/paho.mqtt.golang"
 )
 
-func PublishMessage(client MQTT.Client, topic, message string) {
+/*
+Initialize MQTT connection and publish message to MQTT broker.
+BrokerURI and topic get from .env file.
+*/
+func PublishMessage(message string) error {
+	brokerURI := os.Getenv("MQTT_BROKER")
+	topic := getTopic()
+	clientID := utils.GetHostname()
+
+	opts := MQTT.NewClientOptions().AddBroker(brokerURI).SetClientID(strings.ToUpper(clientID))
+	logger.Info("opts: ", opts)
+
+	client := MQTT.NewClient(opts)
+	logger.Info("client: ", client)
+
+	if token := client.Connect(); token.Wait() && token.Error() != nil {
+		logger.Error(token.Error())
+		return token.Error()
+	}
+	logger.Info("connected")
+	defer client.Disconnect(250)
+
 	token := client.Publish(topic, 0, false, message)
 	token.Wait()
 	if token.Error() != nil {
-		fmt.Printf("Error publishing message: %v\n", token.Error())
+		logger.Error("Error publishing message: ", token.Error())
+		return token.Error()
 	}
+
+	return nil
 }
 
-func InitMQTT() {
-	brokerURI := os.Getenv("MQTT_BROKER")
-	topic := os.Getenv("MQTT_TOPIC")
-	clientID := os.Getenv("HOSTNAME")
+/*
+Determine MQTT topic from .env file and replace placeholder '{hostname}' with hostname (uppercase) from local machine.
+*/
+func getTopic() (topic string) {
+	topic = os.Getenv("MQTT_TOPIC")
 
-	opts := MQTT.NewClientOptions().AddBroker(brokerURI).SetClientID(clientID)
-	client := MQTT.NewClient(opts)
-
-	if token := client.Connect(); token.Wait() && token.Error() != nil {
-		logger.Fatal(token.Error())
+	// replace placeholder "{hostname}"
+	if strings.Contains(topic, "{hostname}") {
+		topic = strings.ReplaceAll(topic, "{hostname}", utils.GetHostname(utils.Upper))
 	}
-	defer client.Disconnect(250)
 
-	if token := client.Subscribe(topic, 0, onMessageReceived); token.Wait() && token.Error() != nil {
-		logger.Fatal(token.Error())
-		log.Fatal(token.Error())
-	}
-}
-
-func onMessageReceived(client MQTT.Client, message MQTT.Message) {
-	fmt.Printf("Received message: %s from topic: %s\n", message.Payload(), message.Topic())
+	return topic
 }
