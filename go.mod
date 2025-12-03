@@ -1,8 +1,8 @@
 module github.com/qaldak/sysmonmq
 
-go 1.20
+go 1.24.0
 
-require github.com/eclipse/paho.mqtt.golang v1.4.3
+require github.com/eclipse/paho.mqtt.golang v1.5.1
 
 require (
 	github.com/go-ole/go-ole v1.2.6 // indirect
@@ -13,14 +13,14 @@ require (
 	github.com/tklauser/numcpus v0.6.1 // indirect
 	github.com/yusufpapurcu/wmi v1.2.4 // indirect
 	go.uber.org/multierr v1.10.0 // indirect
-	golang.org/x/sys v0.31.0 // indirect
+	golang.org/x/sys v0.36.0 // indirect
 )
 
 require (
-	github.com/gorilla/websocket v1.5.0 // indirect
+	github.com/gorilla/websocket v1.5.3 // indirect
 	github.com/joho/godotenv v1.5.1
 	github.com/shirou/gopsutil/v3 v3.24.4
 	go.uber.org/zap v1.27.0
-	golang.org/x/net v0.38.0 // indirect
-	golang.org/x/sync v0.1.0 // indirect
+	golang.org/x/net v0.44.0 // indirect
+	golang.org/x/sync v0.17.0 // indirect
 )
